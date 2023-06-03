@@ -1,0 +1,47 @@
+.container{
+  width: 90%;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+
+#post,
+#photo{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 570px;
+  overflow-y: scroll;
+  margin-bottom: 2rem;
+}
+#post::-webkit-scrollbar, 
+#photo::-webkit-scrollbar {
+  display: none;
+}
+#post,
+#photo {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.post,
+.photo{
+  background-color: burlywood;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.container h1,
+.container h2{
+  margin: 40px auto;
+  background-color: aliceblue;
+  padding: 40px;
+  text-align: center;
+}
+
+@media(max-width:568px){
+  #post,
+#photo{
+ 
+  grid-template-columns:1fr;
+}
+}
