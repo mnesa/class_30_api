@@ -12,7 +12,7 @@
   overflow-y: scroll;
   margin-bottom: 2rem;
   border: 2px solid #3333336e;
-  box-shadow: 5px 10px #88888899;;
+  box-shadow: 5px 10px #88888899;
 }
 #post::-webkit-scrollbar, 
 #photo::-webkit-scrollbar {
